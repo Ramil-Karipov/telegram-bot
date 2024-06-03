@@ -35,7 +35,7 @@ public class TelegramBotUpdatesListener implements UpdatesListener {
             logger.info("Processing update: {}", update);
             String text = update.message().text();
             if (text.equals("/start")){
-                telegramBot.execute(new SendMessage(update.message().chat().id(), "Добро пожаловать в чат-бот!"));
+                telegramBot.execute(new SendMessage(update.message().chat().id(), "Hello, World!"));
             }
         });
         return UpdatesListener.CONFIRMED_UPDATES_ALL;
