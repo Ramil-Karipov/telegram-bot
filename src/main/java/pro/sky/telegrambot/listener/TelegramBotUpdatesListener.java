@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import pro.sky.telegrambot.entity.NotificationTask;
-import repository.NotificationTaskRepository;
+import pro.sky.telegrambot.repository.NotificationTaskRepository;
 
 import javax.annotation.PostConstruct;
 import java.time.LocalDateTime;
